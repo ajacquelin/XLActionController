@@ -153,7 +153,7 @@ open class DynamicCollectionViewFlowLayout: UICollectionViewFlowLayout {
         switch itemsAligment {
         case .center:
             translationX = (collectionViewContentWidth - frame.size.width) * 0.5
-        case .fill, .left:
+        case .fill, .left, .trailing, .leading:
             translationX = 0.0
         case .right:
             translationX = (collectionViewContentWidth - frame.size.width)
